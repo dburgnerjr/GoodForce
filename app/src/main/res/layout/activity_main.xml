@@ -7,12 +7,37 @@
     tools:context="com.danielburgnerjr.goodforce.MainActivity">
 
     <TextView
+        android:id="@+id/txtGoodForce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="GoodForce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/txtPremise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play trivia, win cash, make debt disappear."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtComingSoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coming soon to a phone near you."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
 </android.support.constraint.ConstraintLayout>
