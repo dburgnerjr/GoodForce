@@ -1,0 +1,61 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danielburgnerjr.goodforce.GameStartActivity">
+
+    <TextView
+        android:id="@+id/txtDailyPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:text="Daily Prize: $1.00" />
+
+    <TextView
+        android:id="@+id/txtPlayerId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDailyPrize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Welcome Player, #1"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtPlayButtonGoesHere"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPlayerId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Play Button Goes Here"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtProgressVsGoal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPlayButtonGoesHere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Progress:  $0, Goal: $15,000"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtWatchVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProgressVsGoal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Watch Video to Help Us Meet Our Goals"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+</android.widget.RelativeLayout>
