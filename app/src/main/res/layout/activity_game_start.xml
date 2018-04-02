@@ -58,4 +58,14 @@
         android:textAlignment="center"
         android:textSize="18dp" />
 
+    <Button
+        android:id="@+id/btnGameRules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWatchVideo"
+        android:layout_centerHorizontal="true"
+        android:text="Game Rules"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="399dp" />
+
 </android.widget.RelativeLayout>
