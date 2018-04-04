@@ -19,6 +19,8 @@
         <activity android:name=".GameStartActivity" />
         <activity android:name=".GameRulesActivity" />
         <activity android:name=".QuestionActivity" />
+        <activity android:name=".CorrectAnswerActivity" />
+        <activity android:name=".WrongAnswerActivity" />
     </application>
 
 </manifest>
