@@ -21,7 +21,8 @@
         <activity android:name=".QuestionActivity" />
         <activity android:name=".CorrectAnswerActivity" />
         <activity android:name=".WrongAnswerActivity" />
-        <activity android:name=".FinalScoreActivity"></activity>
+        <activity android:name=".FinalScoreActivity" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
