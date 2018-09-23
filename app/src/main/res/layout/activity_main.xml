@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +10,9 @@
         android:id="@+id/txtGoodForce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
         android:text="GoodForce"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -21,6 +24,9 @@
         android:id="@+id/txtPremise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
         android:text="Play trivia, win cash, make debt disappear."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,6 +37,7 @@
         android:id="@+id/txtComingSoon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="Coming soon to a phone near you."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,9 +51,11 @@
         android:id="@+id/btnBegin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
         android:text="Begin"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="399dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

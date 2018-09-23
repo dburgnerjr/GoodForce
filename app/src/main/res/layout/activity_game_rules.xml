@@ -10,18 +10,18 @@
         android:id="@+id/txtGameRules"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="24dp"
-        android:text="GoodForce Game Rules" />
+        android:layout_marginTop="46dp"
+        android:text="GoodForce Game Rules"
+        android:textSize="24dp" />
 
     <TextView
         android:id="@+id/txtGRComingSoon"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtDailyPrize"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
         android:text="Coming soon."
         android:textAlignment="center"
         android:textSize="18dp" />
