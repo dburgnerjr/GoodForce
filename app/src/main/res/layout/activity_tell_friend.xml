@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danielburgnerjr.goodforce.TellFriendActivity">
+
+    <TextView
+        android:id="@+id/txtTellFriendActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:text="Tell A Friend Activity" />
+
+    <TextView
+        android:id="@+id/txtSharingIsCaring"
+        android:layout_width="303dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+        android:text="Every time a friend signs up for GoodForce using your invite code, you'll receive one coin and 1000 points." />
+
+    <EditText
+        android:id="@+id/edtFriendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="211dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Friend's Email" />
+
+    <EditText
+        android:id="@+id/edtFriendPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="117dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Friend's Phone" />
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="176dp"
+        android:text="OR" />
+
+    <TextView
+        android:id="@+id/txtGoodForceCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="229dp"
+        android:text="GoodForce Code:  DB105244" />
+
+    <Button
+        android:id="@+id/btnInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="Invite" />
+</android.widget.RelativeLayout>

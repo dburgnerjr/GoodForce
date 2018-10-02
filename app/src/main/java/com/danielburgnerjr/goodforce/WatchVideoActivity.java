@@ -1,31 +1,31 @@
 package com.danielburgnerjr.goodforce;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class QuestionActivity extends Activity {
+public class WatchVideoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question);
+        setContentView(R.layout.activity_watch_video);
 
-        final Button btnTrue = (Button) findViewById(R.id.btnTrue);
-        final Button btnFalse = (Button) findViewById(R.id.btnFalse);
+        final Button btnContinue = (Button) findViewById(R.id.btnContinue);
+        final Button btnMainMenu = (Button) findViewById(R.id.btnMainMenu);
 
-        btnTrue.setOnClickListener(new View.OnClickListener() {
+        btnContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intA = new Intent(QuestionActivity.this, CorrectAnswerActivity.class);
+                Intent intA = new Intent(WatchVideoActivity.this, FinalScoreActivity.class);
                 startActivity(intA);
                 //Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
             }
         });
-        btnFalse.setOnClickListener(new View.OnClickListener() {
+        btnMainMenu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intA = new Intent(QuestionActivity.this, WrongAnswerActivity.class);
+                Intent intA = new Intent(WatchVideoActivity.this, GameStartActivity.class);
                 startActivity(intA);
                 //Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
             }

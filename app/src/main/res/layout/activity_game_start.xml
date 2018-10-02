@@ -42,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_marginBottom="168dp"
         android:text="Progress:  $0, Goal: $15,000"
         android:textAlignment="center"
@@ -51,10 +52,8 @@
         android:id="@+id/btnWatchVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="101dp"
-        android:layout_marginEnd="11dp"
+        android:layout_alignTop="@+id/btnExtraLives"
+        android:layout_toEndOf="@+id/btnExtraLives"
         android:text="Watch Video"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="399dp" />
@@ -64,7 +63,6 @@
         android:layout_width="119dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnWatchVideo"
-        android:layout_marginTop="-101dp"
         android:layout_toStartOf="@+id/btnExtraLives"
         android:text="Game Rules"
         tools:layout_editor_absoluteX="148dp"
@@ -74,7 +72,7 @@
         android:id="@+id/btnExtraLives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnWatchVideo"
+        android:layout_alignTop="@+id/btnGoodForceCoins"
         android:layout_centerHorizontal="true"
         android:text="Extra Lives: 2" />
 
@@ -82,8 +80,9 @@
         android:id="@+id/btnGoodForceCoins"
         android:layout_width="113dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnWatchVideo"
-        android:layout_toStartOf="@+id/btnExtraLives"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnGameRules"
+        android:layout_marginBottom="106dp"
         android:text="Coins: 2" />
 
     <Button
@@ -99,7 +98,26 @@
         android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btnWatchVideo"
+        android:layout_alignLeft="@+id/btnWatchVideo"
         android:layout_alignTop="@+id/btnGameRules"
         android:text="Points: 100" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnGameRules"
+        android:layout_marginStart="86dp"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnGameRules"
+        android:layout_marginEnd="93dp"
+        android:text="Logout" />
 
 </android.widget.RelativeLayout>

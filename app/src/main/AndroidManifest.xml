@@ -22,7 +22,18 @@
         <activity android:name=".CorrectAnswerActivity" />
         <activity android:name=".WrongAnswerActivity" />
         <activity android:name=".FinalScoreActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ExtraLivesActivity" />
+        <activity android:name=".WatchVideoActivity" />
+        <activity android:name=".CoinsActivity" />
+        <activity android:name=".TellFriendActivity" />
+        <activity android:name=".PointsActivity" />
+        <activity android:name=".LogoutActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

@@ -14,10 +14,27 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button btnHowToPlay = (Button) findViewById(R.id.btnBegin);
-        btnHowToPlay.setOnClickListener(new OnClickListener() {
+        final Button btnBegin = (Button) findViewById(R.id.btnBegin);
+        final Button btnLogin = (Button) findViewById(R.id.btnLogin);
+        final Button btnRegister = (Button) findViewById(R.id.btnRegister);
+
+        btnBegin.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
                 Intent intA = new Intent(MainActivity.this, GameStartActivity.class);
+                startActivity(intA);
+                //Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnLogin.setOnClickListener(new OnClickListener() {
+            public void onClick(View view) {
+                Intent intA = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intA);
+                //Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnRegister.setOnClickListener(new OnClickListener() {
+            public void onClick(View view) {
+                Intent intA = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intA);
                 //Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
             }

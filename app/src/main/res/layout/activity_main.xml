@@ -58,4 +58,21 @@
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="399dp" />
 
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="107dp"
+        android:layout_toStartOf="@+id/txtGoodForce"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_toEndOf="@+id/btnBegin"
+        android:text="Register" />
+
 </RelativeLayout>
