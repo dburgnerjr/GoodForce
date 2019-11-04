@@ -20,7 +20,6 @@
         <activity android:name=".GameRulesActivity" />
         <activity android:name=".QuestionActivity" />
         <activity android:name=".CorrectAnswerActivity" />
-        <activity android:name=".WrongAnswerActivity" />
         <activity android:name=".FinalScoreActivity" />
         <activity android:name=".RegisterActivity" />
         <activity
