@@ -19,7 +19,7 @@
         <activity android:name=".GameStartActivity" />
         <activity android:name=".GameRulesActivity" />
         <activity android:name=".QuestionActivity" />
-        <activity android:name=".CorrectAnswerActivity" />
+        <activity android:name=".AnswerActivity" />
         <activity android:name=".FinalScoreActivity" />
         <activity android:name=".RegisterActivity" />
         <activity
