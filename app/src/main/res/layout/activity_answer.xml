@@ -4,52 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.danielburgnerjr.goodforce.WrongAnswerActivity">
+    tools:context="com.danielburgnerjr.goodforce.AnswerActivity">
 
     <TextView
-        android:id="@+id/txtWrong"
+        android:id="@+id/txtAnswerOutcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="113dp"
-        android:text="Strike!" />
+        android:text="@string/answerOutcome" />
 
     <TextView
         android:id="@+id/txtAnswerExplanation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtWrong"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:text="Explanation goes here." />
+        android:layout_marginTop="163dp"
+        android:text="@string/answerExplanation" />
 
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
-        android:layout_below="@+id/txtAnswerExplanation"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="182dp"
-        android:layout_marginTop="29dp"
-        android:text="Continue" />
+        android:layout_centerInParent="true"
+        android:text="@string/answerContinue" />
 
     <TextView
-        android:id="@+id/txtScore"
+        android:id="@+id/txtScoreAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="127dp"
+        android:layout_marginBottom="132dp"
         android:layout_toStartOf="@+id/txtAnswerExplanation"
-        android:text="Your Score: 0" />
+        android:layout_toLeftOf="@+id/txtAnswerExplanation"
+        android:text="@string/answerGameScore" />
 
     <TextView
         android:id="@+id/txtNumStrikes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/txtScore"
-        android:layout_toEndOf="@+id/txtAnswerExplanation"
-        android:layout_toRightOf="@+id/txtAnswerExplanation"
-        android:text="Strikes: 0" />
+        android:layout_alignTop="@+id/txtScoreAnswer"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_toEndOf="@+id/txtScoreAnswer"
+        android:layout_toRightOf="@+id/txtScoreAnswer"
+        android:text="@string/answerStrikes" />
 
 </android.widget.RelativeLayout>

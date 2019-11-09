@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="88dp"
-        android:text="Game Over" />
+        android:text="@string/gameOver" />
 
     <TextView
         android:id="@+id/txtYourScore"
@@ -22,23 +22,23 @@
         android:layout_below="@+id/txtGameOver"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="76dp"
-        android:text="0" />
+        android:text="@string/yourScore" />
 
-    <TextView
-        android:id="@+id/txtPlayAgain"
+    <Button
+        android:id="@+id/btnPlayAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtYourScore"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:text="Play Again?" />
+        android:text="@string/playAgain" />
 
     <TextView
         android:id="@+id/txtRank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtPlayAgain"
+        android:layout_below="@+id/btnPlayAgain"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="89dp"
-        android:text="Your Rank: 0" />
+        android:text="@string/playerRank" />
 </android.widget.RelativeLayout>

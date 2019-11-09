@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="About GoodForce" />
+        android:text="@string/aboutGFTitle" />
 
     <TextView
         android:id="@+id/txtGoodForcePurpose"
@@ -22,5 +22,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
-        android:text="The object of GoodForce is to answer trivia questions in an effort to win cash while crowdfunding loans (credit cards, car loans, payday loans and personal loans) so that players can be debt-free." />
+        android:text="@string/gfPurpose" />
 </android.widget.RelativeLayout>

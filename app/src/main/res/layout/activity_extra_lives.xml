@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="GoodForce Extra Lives" />
+        android:text="@string/gfExtraLivesTitle" />
 
     <TextView
         android:id="@+id/txtGoodForcePurchaseExtraLives"
@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
-        android:text="You can purchase extra lives to extend your game if you reach your third strike.  You earn 500 Points for each extra life you purchase." />
+        android:text="@string/gfExtraLivesPurchase" />
 
     <Button
         android:id="@+id/btnOneExtraLife"
@@ -33,7 +33,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
-        android:text="One Extra Life .50" />
+        android:text="@string/gfOneExtraLife" />
 
     <Button
         android:id="@+id/btnTwoExtraLives"
@@ -44,7 +44,7 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="21dp"
         android:layout_marginRight="21dp"
-        android:text="2 Extra Lives 1.00" />
+        android:text="@string/gfTwoExtraLives" />
 
     <Button
         android:id="@+id/btnThreeExtraLives"
@@ -53,7 +53,7 @@
         android:layout_alignStart="@+id/btnOneExtraLife"
         android:layout_alignLeft="@+id/btnOneExtraLife"
         android:layout_below="@+id/btnOneExtraLife"
-        android:text="3 Extra Lives 1.50" />
+        android:text="@string/gfThreeExtraLives" />
 
     <Button
         android:id="@+id/btnFourExtraLives"
@@ -62,7 +62,7 @@
         android:layout_alignStart="@+id/btnTwoExtraLives"
         android:layout_alignLeft="@+id/btnTwoExtraLives"
         android:layout_below="@+id/btnTwoExtraLives"
-        android:text="4 Extra Lives 2.00" />
+        android:text="@string/gfFourExtraLives" />
 
     <Button
         android:id="@+id/btnFiveExtraLives"
@@ -72,7 +72,7 @@
         android:layout_alignStart="@+id/btnOneExtraLife"
         android:layout_alignLeft="@+id/btnOneExtraLife"
         android:layout_marginBottom="113dp"
-        android:text="5 Extra Lives 2.50" />
+        android:text="@string/gfFiveExtraLives" />
 
     <Button
         android:id="@+id/btnTenExtraLives"
@@ -81,5 +81,5 @@
         android:layout_alignStart="@+id/btnTwoExtraLives"
         android:layout_alignLeft="@+id/btnTwoExtraLives"
         android:layout_alignTop="@+id/btnFiveExtraLives"
-        android:text="10 Extra Lives 5.00" />
+        android:text="@string/gfTenExtraLives" />
 </android.widget.RelativeLayout>

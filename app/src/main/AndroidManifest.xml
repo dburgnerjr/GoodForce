@@ -24,7 +24,6 @@
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ExtraLivesActivity" />
         <activity android:name=".WatchVideoActivity" />
@@ -32,7 +31,8 @@
         <activity android:name=".TellFriendActivity" />
         <activity android:name=".PointsActivity" />
         <activity android:name=".LogoutActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
     </application>
 
 </manifest>
