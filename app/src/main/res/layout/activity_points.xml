@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="Points Log" />
+        android:text="@string/pointsActivity" />
 
     <TextView
         android:id="@+id/txtPointsLog"
@@ -22,5 +22,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
-        android:text="This is how the user earns points." />
+        android:text="@string/pointsLog" />
 </android.widget.RelativeLayout>

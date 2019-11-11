@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="151dp"
-        android:text="GoodForce"
+        android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:text="Play trivia, win cash, make debt disappear."
+        android:text="@string/premise"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Coming soon to a phone near you."
+        android:text="@string/comingSoon"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -54,7 +54,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="171dp"
-        android:text="Begin"
+        android:text="@string/beginPlay"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="399dp" />
 
@@ -65,14 +65,16 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="107dp"
         android:layout_toStartOf="@+id/txtGoodForce"
-        android:text="Login" />
+        android:layout_toLeftOf="@+id/txtGoodForce"
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/btnLogin"
+        android:layout_toRightOf="@+id/btnBegin"
         android:layout_toEndOf="@+id/btnBegin"
-        android:text="Register" />
+        android:text="@string/register" />
 
 </RelativeLayout>

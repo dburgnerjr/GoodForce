@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="165dp"
-        android:text="Question goes here." />
+        android:text="@string/questionName" />
 
     <TextView
         android:id="@+id/txtQuestionValue"
@@ -25,7 +25,7 @@
         android:layout_marginTop="64dp"
         android:layout_toLeftOf="@+id/txtQuestion"
         android:layout_toStartOf="@+id/txtQuestion"
-        android:text="10 Points" />
+        android:text="@string/questionValue" />
 
     <Button
         android:id="@+id/btnTrue"
@@ -35,7 +35,7 @@
         android:layout_marginTop="107dp"
         android:layout_toLeftOf="@+id/txtQuestion"
         android:layout_toStartOf="@+id/txtQuestion"
-        android:text="True" />
+        android:text="@string/questionTrue" />
 
     <Button
         android:id="@+id/btnFalse"
@@ -44,7 +44,7 @@
         android:layout_alignBottom="@+id/btnTrue"
         android:layout_toEndOf="@+id/txtQuestion"
         android:layout_toRightOf="@+id/txtQuestion"
-        android:text="False" />
+        android:text="@string/questionFalse" />
 
     <TextView
         android:id="@+id/txtScore"
@@ -53,7 +53,7 @@
         android:layout_below="@+id/btnFalse"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="Your Score: 0" />
+        android:text="@string/questionGameScore" />
 
     <TextView
         android:id="@+id/txtTimer"
@@ -65,5 +65,5 @@
         android:layout_alignRight="@+id/btnFalse"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
-        android:text="10" />
+        android:text="@string/questionTimer" />
 </android.widget.RelativeLayout>

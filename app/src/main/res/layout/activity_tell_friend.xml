@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="Tell A Friend Activity" />
+        android:text="@string/tellFriendActivity" />
 
     <TextView
         android:id="@+id/txtSharingIsCaring"
@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
-        android:text="Every time a friend signs up for GoodForce using your invite code, you'll receive one coin and 1000 points." />
+        android:text="@string/sharingIsCaring" />
 
     <EditText
         android:id="@+id/edtFriendEmail"
@@ -32,8 +32,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="211dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Friend's Email" />
+        android:inputType="textEmailAddress"
+        android:text="@string/inviteEmailAddress" />
 
     <EditText
         android:id="@+id/edtFriendPhone"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="117dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="Friend's Phone" />
+        android:text="@string/invitePhone" />
 
     <TextView
         android:id="@+id/txtOr"
@@ -53,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="176dp"
-        android:text="OR" />
+        android:text="@string/or" />
 
     <TextView
         android:id="@+id/txtGoodForceCode"
@@ -62,7 +62,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="229dp"
-        android:text="GoodForce Code:  DB105244" />
+        android:text="@string/goodForceCode" />
 
     <Button
         android:id="@+id/btnInvite"
@@ -71,5 +71,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="52dp"
-        android:text="Invite" />
+        android:text="@string/inviteFinal" />
 </android.widget.RelativeLayout>

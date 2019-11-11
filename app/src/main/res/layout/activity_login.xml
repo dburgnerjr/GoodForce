@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="51dp"
-        android:text="Login" />
+        android:text="@string/loginTitle" />
 
     <TextView
         android:id="@+id/txtEmailAddress"
@@ -25,7 +25,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="37dp"
-        android:text="Email: " />
+        android:text="@string/emailAddress" />
 
     <EditText
         android:id="@+id/edtEmailAddress"
@@ -47,7 +47,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="37dp"
-        android:text="Password: " />
+        android:text="@string/password" />
 
     <EditText
         android:id="@+id/edtPassword"
@@ -59,7 +59,7 @@
         android:layout_marginEnd="11dp"
         android:layout_marginRight="11dp"
         android:ems="10"
-        android:inputType="numberPassword" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -68,7 +68,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="212dp"
-        android:text="Login" />
+        android:text="@string/loginButton" />
 
     <Button
         android:id="@+id/btnForgotPW"
@@ -77,6 +77,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="230dp"
-        android:text="Forgot Password" />
+        android:text="@string/forgotPassword" />
 
 </android.widget.RelativeLayout>

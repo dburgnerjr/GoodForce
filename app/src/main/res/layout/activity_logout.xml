@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="You Are Logged Out" />
+        android:text="@string/logoutActivity" />
 
     <TextView
         android:id="@+id/txtThankYou"
@@ -22,5 +22,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
-        android:text="Thank you for playing GoodForce." />
+        android:textAlignment="center"
+        android:text="@string/thankYou" />
 </android.widget.RelativeLayout>
