@@ -105,5 +105,5 @@
     <string name="interstitial_ad_unit_id">/6499/example/interstitial</string>
     <string name="finalScore">Final Score</string>
     <string name="mainMenu">Main Menu</string>
-
+    <string name="admob_app_id">ca-app-pub-8379108590476103~5508271929</string>
 </resources>
