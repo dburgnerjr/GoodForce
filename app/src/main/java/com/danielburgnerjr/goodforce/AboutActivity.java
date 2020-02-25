@@ -9,7 +9,7 @@ import com.danielburgnerjr.goodforce.model.User;
 
 public class AboutActivity extends AppCompatActivity {
 
-    private Intent intU;
+    Intent intU;
     private User usrU;
 
     @Override
