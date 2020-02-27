@@ -2,10 +2,10 @@ package com.danielburgnerjr.goodforce;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,23 +16,23 @@ import java.util.Random;
 
 public class QuestionActivity extends Activity {
 
-    private TextView txtQuestion;
-    private TextView txtQuestionValue;
-    private TextView txtScore;
+    TextView txtQuestion;
+    TextView txtQuestionValue;
+    TextView txtScore;
     private TextView txtTimer;
-    private Button btnTrue;
-    private Button btnFalse;
+    Button btnTrue;
+    Button btnFalse;
     private boolean bCorrectAnswer;
     private boolean bYourAnswer;
-    private int nStrikes;
-    private int nQuestionNumber;
-    private int nQuestionValue;
+    int nStrikes;
+    int nQuestionNumber;
+    int nQuestionValue;
     private int nPlayerNumber;
-    private int nExtraLives;
-    private boolean bExtraLifeUsed;
-    private int nScore;
+    int nExtraLives;
+    boolean bExtraLifeUsed;
+    int nScore;
     private CountDownTimer mCountDown;
-    private Intent intQ;
+    Intent intQ;
     private User usrU;
     private Game gmG;
 
@@ -40,12 +40,12 @@ public class QuestionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
-        txtQuestion = (TextView) findViewById(R.id.txtQuestion);
-        txtQuestionValue = (TextView) findViewById(R.id.txtQuestionValue);
-        txtScore = (TextView) findViewById(R.id.txtScore);
-        txtTimer = (TextView) findViewById(R.id.txtTimer);
-        btnTrue = (Button) findViewById(R.id.btnTrue);
-        btnFalse = (Button) findViewById(R.id.btnFalse);
+        txtQuestion = findViewById(R.id.txtQuestion);
+        txtQuestionValue = findViewById(R.id.txtQuestionValue);
+        txtScore = findViewById(R.id.txtScore);
+        txtTimer = findViewById(R.id.txtTimer);
+        btnTrue = findViewById(R.id.btnTrue);
+        btnFalse = findViewById(R.id.btnFalse);
 
         intQ = getIntent();
         usrU = (User) intQ.getSerializableExtra("User");
@@ -83,53 +83,52 @@ public class QuestionActivity extends Activity {
             nScore = gmG.getScore();
         }
         if ((gmG.getStrikes() == 3) && (gmG.getExtraLives() > 0)) {
-            if (gmG.isExtraLifeUsed() == false) {
-                AlertDialog adAlertBox = new AlertDialog.Builder(this)
-                        .setMessage("You used an extra life for getting three strikes!")
-                        .setPositiveButton("OK", null)
-                        .show();
-                gmG.setExtraLives(gmG.getExtraLives() - 1);
+            if (!gmG.isExtraLifeUsed()) {
+                AlertDialog adAlertBox = new AlertDialog.Builder(this).create();
+                adAlertBox.setMessage("You used an extra life for getting three strikes!");
+                adAlertBox.setButton(AlertDialog.BUTTON_POSITIVE, "OK", (DialogInterface arg0, int arg1) -> {
+                });
+                adAlertBox.show();gmG.setExtraLives(gmG.getExtraLives() - 1);
                 usrU.setExtraLives(usrU.getExtraLives() - 1);
                 gmG.setExtraLifeUsed(true);
             }
         }
 
-        txtQuestion.setText("This is a sample question.");
-        txtQuestionValue.setText(nQuestionValue + " Points");
-        txtScore.setText("Your Score: " + nScore);
-        txtTimer.setText("10");
+        String strQuestion = "This is a sample question.";
+        String strQuestionValue = nQuestionValue + " Points";
+        String strScore = "Your Score: " + nScore;
+        String strTimer = "10";
+        txtQuestion.setText(strQuestion);
+        txtQuestionValue.setText(strQuestionValue);
+        txtScore.setText(strScore);
+        txtTimer.setText(strTimer);
 
         Random randomno = new Random();
 
         bCorrectAnswer = randomno.nextBoolean();
 
         // OnClickListener not working and playing well with CountDownTimer
-        btnTrue.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                mCountDown.cancel();
-                bYourAnswer = true;
-                Intent intA = new Intent(QuestionActivity.this, AnswerActivity.class);
-                intA.putExtra("YourAnswer", bYourAnswer);
-                intA.putExtra("CorrectAnswer", bCorrectAnswer);
-                intA.putExtra("User", usrU);
-                intA.putExtra("Game", gmG);
-                startActivity(intA);
-                finish();
-            }
+        btnTrue.setOnClickListener(view -> {
+            mCountDown.cancel();
+            bYourAnswer = true;
+            Intent intA = new Intent(QuestionActivity.this, AnswerActivity.class);
+            intA.putExtra("YourAnswer", bYourAnswer);
+            intA.putExtra("CorrectAnswer", bCorrectAnswer);
+            intA.putExtra("User", usrU);
+            intA.putExtra("Game", gmG);
+            startActivity(intA);
+            finish();
         });
 
-        btnFalse.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                mCountDown.cancel();
-                Intent intA = new Intent(QuestionActivity.this, AnswerActivity.class);
-                bYourAnswer = false;
-                intA.putExtra("YourAnswer", bYourAnswer);
-                intA.putExtra("CorrectAnswer", bCorrectAnswer);
-                intA.putExtra("User", usrU);
-                intA.putExtra("Game", gmG);
-                startActivity(intA);
-                finish();
-            }
+        btnFalse.setOnClickListener(view -> {
+            mCountDown.cancel();
+            Intent intA = new Intent(QuestionActivity.this, AnswerActivity.class);
+            intA.putExtra("YourAnswer", bYourAnswer);
+            intA.putExtra("CorrectAnswer", bCorrectAnswer);
+            intA.putExtra("User", usrU);
+            intA.putExtra("Game", gmG);
+            startActivity(intA);
+            finish();
         });
 
         mCountDown = new CountDownTimer(10000, 1000) {
