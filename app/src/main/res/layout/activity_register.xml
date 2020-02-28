@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,7 +38,8 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/registerFirstName" />
+        android:autofillHints="@string/registerFirstName"
+        android:hint="@string/registerFirstName"/>
 
     <TextView
         android:id="@+id/txtLastName"
@@ -63,6 +63,7 @@
         android:layout_alignStart="@+id/edtFirstName"
         android:ems="10"
         android:inputType="textPersonName"
+        android:autofillHints="@string/registerLastName"
         android:hint="@string/registerLastName" />
 
 
@@ -87,6 +88,7 @@
         android:layout_below="@+id/edtLastName"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:autofillHints="@string/registerEmailAddress"
         android:hint="@string/registerEmailAddress"/>
 
     <TextView
@@ -110,6 +112,7 @@
         android:layout_alignStart="@+id/edtEmailAddress"
         android:ems="10"
         android:inputType="textPassword"
+        android:autofillHints="@string/registerPassword"
         android:hint="@string/registerPassword" />
 
     <TextView
@@ -133,6 +136,7 @@
         android:layout_alignStart="@+id/edtPassword"
         android:ems="10"
         android:inputType="textPassword"
+        android:autofillHints="@string/registerPasswordConfirm"
         android:hint="@string/registerPasswordConfirm" />
 
     <TextView
@@ -156,6 +160,7 @@
         android:layout_alignStart="@+id/edtConfirmPassword"
         android:ems="10"
         android:inputType="number"
+        android:autofillHints="@string/registerZipCode"
         android:hint="@string/registerZipCode" />
 
     <Button
