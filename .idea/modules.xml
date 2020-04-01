@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GitHub-GoodForce.iml" filepath="$PROJECT_DIR$/GitHub-GoodForce.iml" group="GoodForce" />
-      <module fileurl="file://$PROJECT_DIR$/GoodForce.iml" filepath="$PROJECT_DIR$/GoodForce.iml" group="GoodForce" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GoodForce.iml" filepath="$PROJECT_DIR$/.idea/GoodForce.iml" group="GoodForce" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="GoodForce/app" />
     </modules>
   </component>
